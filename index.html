@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Pokémon Go Survey Form</h1>
+            <p id="description">Share what you think about this friendly mobile phone game here</p>
+        </header>
+
+        <form action="" id="survey-form">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Enter your name here" required>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Enter your email here" required>
+            <label for="number" id="number-label">Age</label>
+            <input type="number" id="number" min="8" max="99" placeholder="Enter your age here" required>
+
+            <label for="dropdown">Which one was your initial pokemon in the game?</label>
+            <select name="select_initial" id="dropdown">
+                <option value="pikachu">Pikachu</option>
+                <option value="charmander">Charmander</option>
+                <option value="bulbasaur">Bulbasaur</option>
+                <option value="squirtle">Squirtle</option>
+            </select>
+
+            <fieldset>
+                <legend>Would you recommend the game to friends?</legend>
+                <input type="radio" name="recommend" id="yes" value="yes" checked>
+                <label for="yes">Yes</label><br>
+                <input type="radio" name="recommend" id="no" value="no">
+                <label for="no">No</label><br>
+                <input type="radio" name="recommend" id="maybe" value="maybe">
+                <label for="maybe">Maybe</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Which activities from this list do you enjoy the most? (Check all that apply)</legend>
+                <input type="checkbox" name="activity" id="raids" value="raids">
+                <label for="raids">Raids</label><br>
+                <input type="checkbox" name="activity" id="pvp" value="pvp">
+                <label for="pvp">PvP battles</label><br>
+                <input type="checkbox" name="activity" id="eggs" value="eggs">
+                <label for="eggs">Hatching eggs</label><br>
+                <input type="checkbox" name="activity" id="community_days" value="community_day">
+                <label for="community_day">Community Days</label><br>
+                <input type="checkbox" name="activity" id="team_rocket" value="team_rocket">
+                <label for="team_rocket">Team Rocket Battles</label>
+            </fieldset>
+
+            <label for="textarea_comments">Any comments or suggestions?</label>
+            <textarea name="comments" id="textarea_comments" cols="30" rows="4" placeholder="Enter your text here..."></textarea>
+
+            <button type="submit" id="submit">Submit your answers</button>
+        </form>
+        <footer>
+            <p>Background photo by <a href="https://foter.co/a4/12d45f">Danny Choo</a> on <a href="https://foter.com/re6/69a1e4">Foter.com</a> / <a
+                    href="http://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY-NC-SA</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
